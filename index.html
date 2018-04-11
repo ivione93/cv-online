@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<title>Iván García Gómez</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+<!--<body class="w3-light-grey">-->
+<body style="background-color: #F2F2F2">
+
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <p></p>
+    <div class="" style="margin-left: 15px;">
+      <button id="esp" class="w3-bar-item w3-button tablink w3-azul-ivi" onclick="nuevoIdioma(event,'Es')">Español</button>
+      <button id="eng" class="w3-bar-item w3-button tablink" onclick="nuevoIdioma(event,'En')">Inglés</button>
+    </div>
+  
+    <div id="Es" class="w3-content w3-margin-top idioma" style="max-width:1400px;">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+  
+        <!-- Left Column -->
+        <div class="w3-third">
+    
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+            <center>
+              <img src="img/ivan.png" style="width: 86%;" alt="Foto">
+              <div class="w3-container w3-text-black">
+                <h2>Iván García Gómez</h2>
+              </div>
+            </center>
+            </div>
+            <div class="w3-container">
+              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Estudiante de Ingeniería de Software</p>
+              <p><i class="fa fa-child fa-fw w3-margin-right w3-large w3-text-teal"></i>Último año de carrera</p>
+              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, España</p>
+              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailTo:ivgarciag@yahoo.es">ivgarciag@yahoo.es</a></p>
+              <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i> Telefono </p>-->
+              <hr>
+
+              <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Capacidades</b></p>
+              <p>HTML</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+              </div>
+              <p>CSS</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
+                  <div class="w3-center w3-text-white">90%</div>
+                </div>
+              </div>
+              <p>JavaScript</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+              </div>
+              <p>PHP</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+              </div>
+              <p>Django</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+              </div>
+              <br>
+
+              <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b></p>
+              <p>Inglés</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:25%">B1 (TOEIC)</div>
+              </div>
+              <p>&nbsp;25 de enero de 2018</p>
+              <br>
+            </div>
+          </div><br>
+
+        <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+    
+          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia laboral</h2>
+            
+            <!-- Moratalaz -->
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Desarrollador web / <a href="http://www.aamoratalaz.com" target="_blank">www.aamoratalaz.com</a></b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2014 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
+              <p>Colaborador en la página web oficial de la Asociación Atlética Moratalaz.</p>
+              <hr>
+            </div>
+            <!-- Criptored -->
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Desarrollador de Front end / <a href="http://www.beatles4us.com" target="_blank">www.beatles4us.com</a></b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dic 2017</h6>
+              <p>Becario Talentum Startups de Telefónica en Red Temática Criptored. <a href="#" onclick="document.getElementById('criptored').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
+              <!-- Desplegable (modal) -->
+              <div id="criptored" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
+                  <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('criptored').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>Becario Talentum Startups</h2>
+                  </header>
+                  <div class="w3-container">
+                    <p>ACTIVIDADES REALIZADAS</p>
+                    <button onclick="myFunction('b4us')" class="w3-btn w3-block w3-left-align">Desarrollo Front-End <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div id="b4us" class="w3-container w3-hide">
+                      <ul>
+                        <li>Acoplar el framework Bootstrap</li>
+                        <li>Hacer una web responsive</li>
+                        <li>Crear pasatiempos online</li>
+                      </ul>
+                    </div>
+                    <button onclick="myFunction('toth')" class="w3-btn w3-block w3-left-align">Diseñador píldoras Thoth <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div id="toth" class="w3-container w3-hide">
+                      <a href="http://www.criptored.upm.es/thoth/" target="_blank">Proyecto Thoth.</a> Creación de píldoras formativas relacionadas con temas de seguridad de la información.
+                      <ul>
+                        <li><a class="" href="https://youtu.be/h5K-xNTmTcM" target="_blank">Píldora Thoth 48</a></li>
+                        <li><a class="" href="https://youtu.be/vi2wvAQsy-A" target="_blank">Píldora Thoth 49</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin desplegable -->
+              <hr>
+            </div>
+            <!-- Data Adviser -->
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Ayudante de programación / Data Adviser</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2013 - Sep 2014</h6>
+              <p>Ayudante de programación en la consultora informática Data Adviser S.L. <a href="#" onclick="document.getElementById('dataadviser').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
+              <!-- Desplegable (modal) -->
+              <div id="dataadviser" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
+                  <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('dataadviser').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>Data Adviser</h2>
+                  </header>
+                  <div class="w3-container">
+                    <p>ACTIVIDADES REALIZADAS</p>
+                    <ul>
+                      <li>Montaje de un entorno de desarrollo para la edición local de páginas web en lenguaje PHP.</li>
+                      <li>Creación de banners y formularios PHP para la página web.</li>
+                      <li>Actualización y mantenimiento de la página web.</li>
+                      <li>Colaboración en el desarrollo de una aplicación web, a partir de una arquitectura propia de la empresa: base de datos para la gestión de nóminas y expedientes. Lenguajes utilizados: Java, XML, XHTML y SQL, fundamentalmente.</li>
+                      <li>Creación de bases de datos y formularios correspondientes para la gestión de CV, en Access.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin desplegable -->
+              <br>
+            </div>
+          </div>
+
+          <div class="w3-container w3-card-2 w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Formación académica</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Grado de Ingeniería de Software</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
+              <p>Universidad Politécnica de Madrid (UPM)</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Bachiller de Ciencias de la Naturaleza y la Salud</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2010</h6>
+              <p>Título de Bachiller en la modalidad de Ciencias de la Naturaleza y la Salud. I.E.S. Santa Eugenia (Madrid).</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Cursos</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
+              <p>Curso online JavaScript, Node.js, Express y MongoDB de KeepCooding</p>
+              <p>Cursando Máster en programación de videojuegos con Unity3D y C# de Udemy</p>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+              <p>Curso presencial de Python básico y avanzado de Telefónica</p>
+              <p>Curso online Python, Django y REST de KeepCoding</p>
+              <p>Curso online Joomla 3 de Udemy</p><br>
+            </div>
+          </div>
+
+        <!-- End Right Column -->
+        </div>
+    
+      <!-- End Grid -->
+      </div>
+    </div>
+
+  <div id="En" class="w3-content w3-margin-top idioma" style="max-width:1400px;display:none">
+    <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container"><center>
+          <img src="img/ivan.png" style="width: 86%;" alt="Avatar">
+          <div class="w3-container w3-text-black">
+            <h2>Iván García Gómez</h2>
+          </div>
+        </div></center>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineering Student</p>
+          <p><i class="fa fa-child fa-fw w3-margin-right w3-large w3-text-teal"></i>Last year of degree</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, Spain</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ivgarciag@yahoo.es</p>
+          <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+34 telefono</p> -->
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>HTML</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+          <p>JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>PHP</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>Django</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:25%">B1 (TOEIC)</div>
+          </div>
+          <p>&nbsp;Jan 25, 2018</p>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / <a href="http://www.aamoratalaz.com" target="_blank">www.aamoratalaz.com</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Collaborator on the official website of the Moratalaz Athletic Association.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Front End Developer / <a href="http://www.beatles4us.com" target="_blank">www.beatles4us.com</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dec 2017</h6>
+          <p>Telefónica Talentum Startups internship at Red Temática Criptored.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Programming assistant / Data Adviser</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2013 - Sep 2014</h6>
+          <p>Computer programming assistant at Data Adviser S.L.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Degree of Software Engineering</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">Currently</span></h6>
+          <p>Universidad Politécnica de Madrid (UPM)</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>General Certificate of Education (GCE)</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2010</h6>
+          <p>Título de Bachiller en la modalidad de Ciencias de la Naturaleza y la Salud. I.E.S. Santa Eugenia (Madrid).</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Qualifications</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
+          <p>JavaScript, Node.js, Express and MongoDB online course of KeepCooding</p>
+          <p>Stadying Master of videogame programming with Unity3D and C# by Udemy</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+          <p>Basic and advanced Python face-to-face course from Telefónica</p>
+          <p>Python, Django and REST online course of KeepCoding</p>
+          <p>Joomla 3 online course by Udemy</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  </div>
+</div>
+
+<script>
+function nuevoIdioma(evt, idioma) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("idioma");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace("w3-azul-ivi", "");
+  }
+  document.getElementById(idioma).style.display = "block";
+  evt.currentTarget.className += " w3-azul-ivi";
+  if(idioma == 'Es'){
+    document.getElementById("esp").innerHTML = "Español";
+    document.getElementById("eng").innerHTML = "Inglés";
+  } else {
+    document.getElementById("esp").innerHTML = "Spanish";
+    document.getElementById("eng").innerHTML = "English";
+  }
+}
+</script>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Social</p>
+  <a href="https://www.facebook.com/Iviooone" target="_blank"><i class="fa fa-2x fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/ivione93/?hl=es" target="_blank"><i class="fa fa-2x fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/ivione93" target="_blank"><i class="fa fa-2x fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/iv%C3%A1n-garc%C3%ADa-g%C3%B3mez-a074a483/?trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-2x fa-linkedin w3-hover-opacity"></i></a>
+  <p></p>
+</footer>
+
+</body>
+</html>
