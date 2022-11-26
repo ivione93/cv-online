@@ -1,471 +1,312 @@
 <!DOCTYPE html>
-<html>
-<title>Iván García Gómez</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-<link rel="stylesheet" href="css/estilos.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Iván García Gómez</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Resume Website Template Free Download" name="keywords">
+        <meta content="Resume Website Template Free Download" name="description">
 
-<!--<body class="w3-light-grey">-->
-<body style="background-color: #F2F2F2">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    <p></p>
-    <div class="" style="margin-left: 15px;">
-      <button id="esp" class="w3-bar-item w3-button tablink w3-azul-ivi" onclick="nuevoIdioma(event,'Es')">Español</button>
-      <button id="eng" class="w3-bar-item w3-button tablink" onclick="nuevoIdioma(event,'En')">Inglés</button>
-    </div>
-  
-    <div id="Es" class="w3-content w3-margin-top idioma" style="max-width:1400px;">
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-  
-        <!-- Left Column -->
-        <div class="w3-third">
-    
-          <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-display-container">
-            <center>
-              <!-- <img src="img/ivanGarcia.jpg" style="width: 81%;" alt="Foto"> -->
-              <img src="img/ivan.png" style="width: 85%;" alt="Foto">
-              <div class="w3-container w3-text-black">
-                <h2>Iván García Gómez</h2>
-              </div>
-            </center>
-            </div>
-            <div class="w3-container">
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Business & Integration Arch Associate</p>
-              <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-teal"></i>Tecnilógica, Accenture S.L.</p>
-              <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-teal"></i>Graduado en Ingeniería de Software</p>
-              <!--<p><i class="fa fa-child fa-fw w3-margin-right w3-large w3-text-teal"></i>Último año de carrera</p>-->
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, España</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailTo:ivgarciag@yahoo.es">ivgarciag@yahoo.es</a></p>
-              <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i> Telefono </p>-->
-              <hr>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
 
-              <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Capacidades</b></p>
-              <p><b>Backend:</b> Java, Spring Boot, Quarkus</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
-                  <div class="w3-center w3-text-white">90%</div>
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/perfil.png" alt="Image">
                 </div>
-              </div>
-              <p><b>Frontend:</b> Sencha Ext JS, Angular JS</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-              </div>
-              <p><b>Bases de datos:</b> Oracle, PostgreSQL</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-              </div>
-              <p><b>Equipo:</b> Jira, Confluence, SVN y Git</p>
-              
-              
-              <!--<p>Jasper Report</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-              </div>-->
-              <p>Capacidad de trabajo en equipo.</p>
-              <p>En constante aprendizaje.</p>
-              <br>
-
-              <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b></p>
-              <p>Inglés (16 de junio de 2018)</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:60%">B2 (CEFR)</div>
-              </div>
-              <ul>
-                <li><b>C1:</b> expresión escrita</li>
-                <li><b>B2:</b> comprensión oral</li>
-                <li><b>B1:</b> comunicación oral</li>
-              </ul>
-              <br>
-            </div>
-          </div><br>
-
-        <!-- End Left Column -->
-        </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird" >
-    
-          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiencia laboral</h2>
-            
-            <!-- Accenture -->
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Application Development Associate | </b><i>Accenture S.L.</i></h5>
-              <!-- Día -->
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Abr 2020 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
-              <p>Desarrollador de Backoffice orientado a la gestión de pedidos, Día. <a href="#" onclick="document.getElementById('dia').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
-              <!-- Desplegable (modal) -->
-              <div id="dia" class="w3-modal">
-                <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
-                  <header class="w3-container w3-teal"> 
-                    <span onclick="document.getElementById('dia').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h2>Día</h2>
-                  </header>
-                  <div class="w3-container">
-                    <p>ACTIVIDADES REALIZADAS</p>
-                    <ul>
-                      <li>Implementación de Backoffice orientado a la gestión de pedidos.</li>
-                    </ul>
-                    <p>TECNOLOGÍAS</p>
-                    <ul>
-                      <li>Desarrollo web: Quarkus y Java</li>
-                      <li>Base de datos: MySQL</li>
-                      <li>Trabajo en equipo: Jira, Confluence, Git y JenkinsX</li>
-                      <li>Gestión de eventos: Kima y Kibana</li>
-                    </ul>
-                  </div>
+                <div class="sidebar-content">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">Iván García Gómez</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Sobre mí<i class="fa fa-address-card"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experience">Experiencia laboral<i class="fa fa-briefcase"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#education">Formación académica<i class="fa fa-graduation-cap"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hoja-mes">Aplicación Android<i class="fa fa-mobile"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contacto<i class="fa fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-              </div>
-              <!-- Fin desplegable -->
-              <!-- Fin Día -->
-
-               <!-- Carrefour -->
-               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Abr 2020</h6>
-               <p>Desarrollador de servicios y procesos informáticos para la gestión de mercancías, Carrefour. <a href="#" onclick="document.getElementById('carrefour').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
-               <!-- Desplegable (modal) -->
-               <div id="carrefour" class="w3-modal">
-                 <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
-                   <header class="w3-container w3-teal"> 
-                     <span onclick="document.getElementById('carrefour').style.display='none'" 
-                     class="w3-button w3-display-topright">&times;</span>
-                     <h2>Carrefour</h2>
-                   </header>
-                   <div class="w3-container">
-                     <p>ACTIVIDADES REALIZADAS</p>
-                     <ul>
-                       <li>Mantenimiento correctivo y evolutivo de procesos informáticos.</li>
-                       <li>Mantenimiento correctivo y evolutivo de aplicaciones web.</li>
-                       <li>Desarrollo aplicación web para la gestión de productos.</li>
-                     </ul>
-                     <p>TECNOLOGÍAS</p>
-                     <ul>
-                       <li>Desarrollo web: HTML, CSS, JS, Java J2EE, JSP-Servlet, Spring Boot, Sencha Ext JS</li>
-                       <li>Base de datos: SQL, Oracle y PostgreSQL</li>
-                       <li>Servidores: Apache Tomcat y Oracle Weblogic</li>
-                       <li>Trabajo en equipo: Jira, Confluence y SVN</li>
-                     </ul>
-                   </div>
-                 </div>
-               </div>
-               <!-- Fin desplegable -->
-               <!-- Fin Carrefour -->
-
-              <!-- Guardia Civil -->
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - May 2019</h6>
-              <p>Desarrollador de aplicación web en un Cuerpo de Seguridad pública nacional, Guardia Civil. <a href="#" onclick="document.getElementById('guardiacivil').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
-              <!-- Desplegable (modal) -->
-              <div id="guardiacivil" class="w3-modal">
-                <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
-                  <header class="w3-container w3-teal"> 
-                    <span onclick="document.getElementById('guardiacivil').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h2>Guardia Civil</h2>
-                  </header>
-                  <div class="w3-container">
-                    <p>ACTIVIDADES REALIZADAS</p>
-                    <ul>
-                      <li>Mantenimiento correctivo y evolutivo de aplicación web.</li>
-                    </ul>
-                    <p>TECNOLOGÍAS</p>
-                    <ul>
-                      <li>Desarrollo web: HTML, CSS, JS, Java J2EE, JSP-Servlet</li>
-                      <li>Base de datos: SQL y PL SQL</li>
-                      <li>Servidores: Oracle Weblogic</li>
-                      <li>Informes: Jaspersoft Reports y XML</li>
-                      <li>Trabajo en equipo: Jira, Confluence y SVN</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- Fin desplegable -->
-              <!-- Fin Guardia Civil -->
-              <hr>
             </div>
-            <!-- Moratalaz -->
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Desarrollador web | </b><i>Asociación Atlética Moratalaz</i></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2014 - <span class="w3-tag w3-teal w3-round">Actualmente</span></h6>
-              <p>Colaborador en la página web oficial del club de atletismo: <a href="http://www.aamoratalaz.com">www.aamoratalaz.com</a>. Atleta federado desde 2005.</p>
-              <hr>
-            </div>
-            <!-- Criptored -->
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Desarrollador de Front end | </b><i>Red Temática Criptored</i></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dic 2017</h6>
-              <p>Becario Talentum Startups de Telefónica en Red Temática Criptored. <a href="#" onclick="document.getElementById('criptored').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
-              <!-- Desplegable (modal) -->
-              <div id="criptored" class="w3-modal">
-                <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
-                  <header class="w3-container w3-teal"> 
-                    <span onclick="document.getElementById('criptored').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h2>Becario Talentum Startups</h2>
-                  </header>
-                  <div class="w3-container">
-                    <p>ACTIVIDADES REALIZADAS</p>
-                    <button onclick="myFunction('b4us')" class="w3-btn w3-block w3-left-align">Desarrollo Front-End <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                    <div id="b4us" class="w3-container w3-hide">
-                      <a href="http://www.beatles4us.com" target="_blank">www.beatles4us.com</a>. Página web con temática del grupo de música de The Beatles. Actualmente cerrada por falta de mantenimiento.
-                      <ul>
-                        <li>Acoplar el framework Bootstrap</li>
-                        <li>Hacer una web responsive</li>
-                        <li>Crear pasatiempos online</li>
-                      </ul>
+            <div class="content">
+                <!-- Header Start -->
+                <div class="header" id="header">
+                    <div class="content-inner">
+                        <p class="header-text">Hola, soy</p>
+                        <h1 class="header-text">Iván García Gómez</h1>
+                        <h2></h2>
+                        <div class="typed-text header-text">Desarrollador de software</div>
                     </div>
-                    <button onclick="myFunction('toth')" class="w3-btn w3-block w3-left-align">Diseñador píldoras Thoth <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                    <div id="toth" class="w3-container w3-hide">
-                      <a href="http://www.criptored.upm.es/thoth/" target="_blank">Proyecto Thoth.</a> Creación de píldoras formativas relacionadas con temas de seguridad de la información.
-                      <ul>
-                        <li><a class="" href="https://youtu.be/h5K-xNTmTcM" target="_blank">Píldora Thoth 48</a></li>
-                        <li><a class="" href="https://youtu.be/vi2wvAQsy-A" target="_blank">Píldora Thoth 49</a></li>
-                      </ul>
+                </div>
+                <!-- Header End -->
+                
+                <!-- Large Button Start -->
+                <div class="large-btn">
+                    <div class="content-inner">
+                        <a class="btn" href="doc/CV Iván García Gómez.pdf" target="_blank" download><i class="fa fa-download"></i>CV</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.ivione93.hojames" target="_blank"><i class="fa fa-mobile"></i>Hoja del mes</a>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <!-- Fin desplegable -->
-              <hr>
-            </div>
-            <!-- Data Adviser -->
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Ayudante de programación | </b><i>Data Adviser</i></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2013 - Sep 2014</h6>
-              <p>Ayudante de programación en la consultora informática Data Adviser S.L. <a href="#" onclick="document.getElementById('dataadviser').style.display='block'"><i class="fa fa-search-plus"></i></a></p>
-              <!-- Desplegable (modal) -->
-              <div id="dataadviser" class="w3-modal">
-                <div class="w3-modal-content w3-animate-zoom w3-card-4" style="width:50%">
-                  <header class="w3-container w3-teal"> 
-                    <span onclick="document.getElementById('dataadviser').style.display='none'" 
-                    class="w3-button w3-display-topright">&times;</span>
-                    <h2>Data Adviser</h2>
-                  </header>
-                  <div class="w3-container">
-                    <p>ACTIVIDADES REALIZADAS</p>
-                    <ul>
-                      <li>Montaje de un entorno de desarrollo para la edición local de páginas web en lenguaje PHP.</li>
-                      <li>Creación de banners y formularios PHP para la página web.</li>
-                      <li>Actualización y mantenimiento de la página web.</li>
-                      <li>Colaboración en el desarrollo de una aplicación web, a partir de una arquitectura propia de la empresa: base de datos para la gestión de nóminas y expedientes. Lenguajes utilizados: Java, XML, XHTML y SQL, fundamentalmente.</li>
-                      <li>Creación de bases de datos y formularios correspondientes para la gestión de CV, en Access.</li>
-                    </ul>
-                  </div>
+                <!-- Large Button End -->
+                
+                <!-- About Start -->
+                <div class="about" id="about">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Sobre mí</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-5">
+                                <img src="img/foto.png" alt="Image">
+                            </div>
+                            <div class="col-md-6 col-lg-7">
+                                <p>
+                                    Soy Iván García Gómez, Ingeniero de Software (UPM) y atleta nacional de la Asociación Atlética Moratalaz. Trabajo desde 2022 en Amaris Consulting como consultor informático evolucionando el bróker del banco ING.
+                                    <br><br>En noviembre de 2021 publiqué mi primera aplicación Android, Hoja del Mes, que combina mis dos pasiones, el atletismo y la programación.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p><b>Backend</b></p><p>Java, Quarkus, Spring Boot</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p><b>Frontend</b></p><p>Sencha JS, Angular JS, Vue JS</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p><b>Base de datos</b></p><p>Oracle, MySQL, Firebase</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p><b>Cloud</b></p><p>Git, Azure, Google Cloud</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p>Conocimientos en Kubernetes, Docker, Kibana, Grafana... Capacidad de trabajo en equipo y en constante aprendizaje.</p><p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- Fin desplegable -->
-              <br>
+                <!-- About End -->
+                
+                <!-- Experience Start -->
+                <div class="experience" id="experience">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Experiencia laboral</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>Desde Ene 2022</span>
+                                    <h3>Amaris Consulting</h3>
+                                    <h4>Consultor informático</h4>
+                                    <h5>Banco ING</h5>
+                                    <p>Desarrollo de soluciones informáticas en bróker e inversión.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>May 2018 <i>-</i> Dic 2021</span>
+                                    <h3>Accenture S.L.</h3>
+                                    <h4>Analista programador</h4>
+                                    <h5>Supermercados Día</h5>
+                                    <p>Implementación de Backoffice orientado a la gestión de pedidos y stock.</p><br>
+                                    <h5>Carrefour</h5>
+                                    <p>Desarrollo aplicación web para la gestión de productos.</p><br>
+                                    <h5>Guardia Civil</h5>
+                                    <p>Mantenimiento correctivo y evolutivo de aplicación web.</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>Sep 2016 <i>-</i> Dic 2017</span>
+                                    <h3>Red Temática Criptored</h3>
+                                    <h4>Desarrollador web</h4>
+                                    <h5>Beca Talentum Startups de Telefónica</h5>
+                                    <p>Desarrollo de página web con temática del grupo de música de The Beatles.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>Sep 2013 <i>-</i> Sep 2014</span>
+                                    <h3>Data Adviser</h3>
+                                    <h4>Ayudante de programación</h4>
+                                    <p>Becario informático para diferentes proyectos internos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Start -->
+
+                <!-- Education Start -->
+                <div class="education" id="education">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Formación académica</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2020</span>
+                                    <h3>Grado de Ingeniería de Software</h3>
+                                    <p>Universidad Politécnica de Madrid (UPM)</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2018</span>
+                                    <h3>Inglés</h3>
+                                    <p>Nivel B2 (CEFR)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="content-header">
+                            <h3>Formación complementaria</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="edu-col">
+                                    <span>2022</span>
+                                    <p>Curso online Microservicios Quarkus y GraphQL (Udemy)</p><br>
+                                    <span>2018</span>
+                                    <p>Curso online JavaScript, Node.js, Express y MongoDB (KeepCoding)</p>
+                                    <p>Curso online Kotlin - Desarrollo de aplicaciones Android (KeepCoding)</p>
+                                    <p>Curso online Django, Python y REST (KeepCoding)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education Start -->
+                
+                <!-- Hoja del mes Start -->
+                <div class="service" id="hoja-mes">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Aplicación Android</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="srv-col">
+                                    <h3>
+                                        <span style="float: right;"><img src="img/icono.png" style="height: 175px; margin-top: -130px"></span>
+                                    </h3>
+                                    <p>¿Eres de los que sigue apuntando todos sus entrenamientos en un cuaderno?<br><br>
+                                        Hoja del mes es una aplicación sencilla para poder guardar todos los entrenamientos y competiciones dirigida especialmente a gente que practica atletismo.<br><br>
+                                        Permite guardar información más detallada de los entrenamientos como las series, cuestas, fartleks y gimnasios que se realizan en las diferentes sesiones de entrenamiento. También se puede especificar si las series se han realizado con o sin vallas y con o sin arrastres; así como indicar el tipo de calzado utilizado (zapatillas con clavos, voladoras o normales), sin olvidar la distancia y el tiempo realizado.
+                                        Permite llevar un seguimiento de cada una de las competiciones realizadas y compartirlas con los amigos y/o entrenadores.<br><br>
+                                        Se pueden visualizar una serie de estadísticas como el número total de entrenamientos, los kilómetros acumulados mensualmente y el número de competiciones realizadas.<br><br>
+                                        Con las últimas actualizaciones se pueden añadir entrenamientos con un calentamiento no solo de carrera, también de carrera en cinta, elíptica, bicicleta o bici estática.<br><br>
+                                        ¡Pruébala y disfrútala! Todas las sugerencias son bienvenidas para seguir creciendo.</p>
+                                    <a href="https://play.google.com/store/apps/details?id=com.ivione93.hojames" target="_blank"><img src="img/play-store.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hoja del mes Start -->
+                
+                <!-- Contact Start -->
+                <div class="contact" id="contact">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Contacto</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <p><i class="fa fa-user"></i>Iván García Gómez</p>
+                                    <p><i class="fa fa-tag"></i>Ingeniero de Software</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <p><i class="fa fa-envelope"></i><a href="mailto:ivgarciag93@gmail.com">ivgarciag93@gmail.com</a></p>
+                                    <p><i class="fa fa-map-marker"></i>Madrid, España</p>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <a class="btn" href="https://www.linkedin.com/in/iv%C3%A1n-garc%C3%ADa-g%C3%B3mez-a074a483/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact End -->
+                
+
             </div>
-          </div>
-
-          <div class="w3-container w3-card-2 w3-white">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Formación académica</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Grado de Ingeniería de Software</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
-              <p>Universidad Politécnica de Madrid (UPM)</p>
-              <hr>
-            </div>
-            <!--<div class="w3-container">
-              <h5 class="w3-opacity"><b>Bachiller de Ciencias de la Naturaleza y la Salud</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2010</h6>
-              <p>Título de Bachiller en la modalidad de Ciencias de la Naturaleza y la Salud. I.E.S. Santa Eugenia (Madrid).</p>
-              <hr>
-            </div>-->
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Cursos</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
-              <p>Curso online JavaScript, Node.js, Express y MongoDB de KeepCoding</p>
-              <p>Curso online Kotlin - Desarrollo de aplicaciones Android de KeepCoding</p>
-              <p>Curso online Django, Python y REST de KeepCoding</p>
-            </div>
-          </div>
-
-        <!-- End Right Column -->
         </div>
-    
-      <!-- End Grid -->
-      </div>
-    </div>
-
-  <div id="En" class="w3-content w3-margin-top idioma" style="max-width:1400px;display:none">
-    <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container"><center>
-          <!-- <img src="img/ivanGarcia.jpg" style="width: 81%;" alt="Foto"> -->
-          <img src="img/ivan.png" style="width: 85%;" alt="Foto">
-          <div class="w3-container w3-text-black">
-            <h2>Iván García Gómez</h2>
-          </div>
-        </div></center>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Business & Integration Arch Associate</p>
-          <p><i class="fa fa-building fa-fw w3-margin-right w3-large w3-text-teal"></i>Tecnilógica, Accenture S.L.</p>
-          <p><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
-          <!--<p><i class="fa fa-child fa-fw w3-margin-right w3-large w3-text-teal"></i>Last year of degree</p>-->
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, Spain</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailTo:ivgarciag@yahoo.es">ivgarciag@yahoo.es</a></p>
-          <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+34 telefono</p> -->
-          <hr>
-
-          <p><b>Backend:</b>Java, Spring Boot, Quarkus</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
-          </div>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p><b>Frontend:</b> Sencha Ext JS, Angular JS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p><b>Data bases:</b> Oracle, PostgreSQL</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p><b>Team:</b> Jira, Confluence, SVN and Git</p>
-          <p style="color:#0B2F3A"><b></b></p>
-          <p>Teamwork capacity.</p>
-          <p>In constant learning.</p>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English (Jun 16, 2018)</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:60%">B2 (CEFR)</div>
-          </div>
-          <ul>
-            <li><b>C1:</b> writing</li>
-            <li><b>B2:</b> listening</li>
-            <li><b>B1:</b> speaking</li>
-          </ul>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Application Development Associate | </b><i>Accenture S.L.</i></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Abr 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Backoffice developer, Día.</p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - Abr 2020</h6>
-          <p>IT services and process developer, Carrefour.</p>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2018 - May 2019</h6>
-          <p>Web application developer in a public national security force, Guardia Civil.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer | </b><i>Asociación Atlética Moratalaz</i></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2014 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Collaborator on the official website of the athletics team: <a href="http://www.aamoratalaz.com" target="_blank">www.aamoratalaz.com</a>. Athlete of the team since 2005.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer | </b><a href="http://www.beatles4us.com" target="_blank">www.beatles4us.com</a></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - Dec 2017</h6>
-          <p>Telefónica Talentum Startups internship at Red Temática Criptored.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Programming assistant | </b><i>Data Adviser</i></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2013 - Sep 2014</h6>
-          <p>Computer programming assistant at Data Adviser S.L.</p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Degree of Software Engineering</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020</h6>
-          <p>Universidad Politécnica de Madrid (UPM)</p>
-          <hr>
-        </div>
-        <!--<div class="w3-container">
-          <h5 class="w3-opacity"><b>General Certificate of Education (GCE)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2010</h6>
-          <p>Título de Bachiller en la modalidad de Ciencias de la Naturaleza y la Salud. I.E.S. Santa Eugenia (Madrid).</p>
-          <hr>
-        </div>-->
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Qualifications</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
-          <p>JavaScript, Node.js, Express and MongoDB online course of KeepCooding</p>
-          <p>Kotlin - Android Applications online course of KeepCoding</p>
-          <p>Django, Python and REST online course of KeepCoding</p>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  </div>
-</div>
-
-<script>
-function nuevoIdioma(evt, idioma) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("idioma");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("w3-azul-ivi", "");
-  }
-  document.getElementById(idioma).style.display = "block";
-  evt.currentTarget.className += " w3-azul-ivi";
-  if(idioma == 'Es'){
-    document.getElementById("esp").innerHTML = "Español";
-    document.getElementById("eng").innerHTML = "Inglés";
-  } else {
-    document.getElementById("esp").innerHTML = "Spanish";
-    document.getElementById("eng").innerHTML = "English";
-  }
-}
-</script>
-
-<script>
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Social</p>
-  <a href="https://www.facebook.com/Iviooone" target="_blank"><i class="fa fa-2x fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://www.instagram.com/ivione93/?hl=es" target="_blank"><i class="fa fa-2x fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://twitter.com/ivione93" target="_blank"><i class="fa fa-2x fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/iv%C3%A1n-garc%C3%ADa-g%C3%B3mez-a074a483/?trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-2x fa-linkedin w3-hover-opacity"></i></a>
-  <p></p>
-</footer>
-
-</body>
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
